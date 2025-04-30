@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Inflest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      background-color: #fff3e0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav.navbar a {
+      color: #ff6b6b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav.navbar a:hover {
+      text-decoration: underline;
+    }
+    header {
+      padding: 20px;
+    }
+    header img {
+      max-width: 150px;
+    }
+    h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2rem;
+      color: #ff6b6b;
+    }
+    section.presentation {
+      padding: 10px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section.catalog {
+      background-color: #fdf1ec;
+      padding: 30px 10px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #ff9f1c;
+      margin-bottom: 20px;
+    }
+    .toy-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .toy-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      width: 280px;
+      padding: 15px;
+      text-align: left;
+    }
+    .toy-card img {
+      width: 100%;
+      border-radius: 16px;
+    }
+    .toy-card h3 {
+      font-size: 1.2rem;
+      color: #ff6b6b;
+      margin: 10px 0 5px;
+    }
+    .toy-card p {
+      font-size: 0.95rem;
+    }
+    .btn-reservar {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-reservar i {
+      margin-right: 6px;
+    }
+    .btn-reservar:hover {
+      background-color: #45a049;
+    }
+    .free-time-banner {
+      background-color: #ffdd59;
+      color: #222;
+      font-weight: bold;
+      padding: 15px;
+      margin: 30px 0;
+      border-radius: 10px;
+    }
+    footer {
+      background: #ffeaa7;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      z-index: 1001;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebe5b;
+    }
+    .whatsapp-tooltip {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      font-size: 0.9rem;
+      font-weight: bold;
+      z-index: 1001;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#catalogo">Catálogo</a>
+    <a href="https://wa.me/5555999454486" target="_blank"><i class="fab fa-whatsapp"></i> Reservar</a>
+    <a href="#pagamento">Pagamento</a>
+  </nav>
+  <header>
+    <img src="logo-inflest.png" alt="Logo da Inflest">
+    <h1>Diversão que encanta, lembranças que ficam!</h1>
+  </header>
+  <section class="presentation">
+    <p>A Inflest é especializada na locação de brinquedos infláveis e estruturas recreativas, levando alegria e segurança para festas e eventos. Nossa missão é proporcionar momentos inesquecíveis para as crianças, sempre com responsabilidade e carinho. Nossos valores são: confiança, alegria, comprometimento e excelência no atendimento.</p>
+  </section>
+  <section class="catalog" id="catalogo">
+    <h2>Conheça nossos brinquedos!</h2>
+    <div class="toy-grid">
+      <div class="toy-card">
+        <img src="brinquedo1.jpg" alt="Pula-Pula Inflável">
+        <h3>Pula-Pula Inflável</h3>
+        <p>Ideal para crianças pequenas, proporciona muita diversão com total segurança.</p>
+        <p><strong>Medidas:</strong> 3m x 3m x 2,5m</p>
+        <p><strong>Valor:</strong> R$ 150,00</p>
+        <a class="btn-reservar" href="https://wa.me/5555999454486" target="_blank"><i class="fab fa-whatsapp"></i>Reservar</a>
+      </div>
+      <div class="toy-card">
+        <img src="brinquedo2.jpg" alt="Tobogã Gigante">
+        <h3>Tobogã Gigante</h3>
+        <p>Uma aventura cheia de adrenalina! Perfeito para todas as idades.</p>
+        <p><strong>Medidas:</strong> 6m x 3m x 4m</p>
+        <p><strong>Valor:</strong> R$ 250,00</p>
+        <a class="btn-reservar" href="https://wa.me/5555999454486" target="_blank"><i class="fab fa-whatsapp"></i>Reservar</a>
+      </div>
+    </div>
+    <div class="free-time-banner">
+      O tempo de locação é <strong>LIVRE</strong>! A diversão não tem hora para acabar!
+    </div>
+  </section>
+  <footer id="pagamento">
+    <p>Formas de pagamento: Dinheiro, Cartão (em até 3x), e Pix.</p>
+    <p>O pagamento é realizado no momento da montagem.</p>
+    <p><strong>Taxa de R$ 20,00 para montagens fora do perímetro urbano.</strong></p>
+  </footer>
+  <div class="whatsapp-tooltip">Faça sua reserva aqui</div>
+  <a href="https://wa.me/5555999454486" class="whatsapp-float" target="_blank" aria-label="Contato WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
